@@ -10,7 +10,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: page.decoration.pageColor,
+      color: Color(0xFFf2f3f8),
       decoration: page.decoration.boxDecoration,
       child: SafeArea(
         top: false,
