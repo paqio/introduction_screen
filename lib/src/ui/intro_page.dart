@@ -17,24 +17,18 @@ class IntroPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            if (page.image != null)
+            
               Expanded(
                 flex: page.decoration.imageFlex,
                 child: Padding(
-                  padding: page.decoration.imagePadding,
+                  padding:  const EdgeInsets.only(bottom: 70.0, top: 20.0),
+                
+              
                   child: page.image,
                 ),
               ),
-            Expanded(
-              flex: page.decoration.bodyFlex,
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 70.0),
-                child: SingleChildScrollView(
-                  physics: const BouncingScrollPhysics(),
-                  child: IntroContent(page: page),
-                ),
-              ),
-            ),
+            
+            
           ],
         ),
       ),
